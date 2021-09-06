@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head><title>Limit score</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+input[type=text] {
+  width: 22%;
+  height: 90px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #262626;
+  border-radius: 10px;
+  box-shadow: 3px 4px #262626;
+  font-size: 2.2rem;
+}
+.button {
+  background-color: #269900;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 15px; 
+  float: center;
+  box-shadow: 3px 4px #262626;  
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.button:hover {
+background-color: #39e600;
+}
+.p{
+font-size: 1.2rem;
+font-weight: 600;
+font-style: Sans-serif;
+}
+.result{
+ width: 300px;
+ height: 90px;
+ box-shadow: 3px 3px #14a701;
+ border: 2px solid rgb(0, 167, 56);
+ font-size: 1.5rem;
+ font-weight: 400;
+ font-style: sans-serif;
+ background-color: rgb(174, 250, 174);
+}
+</style>
+<script type="text/javascript">
+		function percentage()
+		{
+			var a = document.getElementById("t1").value;
+			var b = document.getElementById("t2").value;
+			var c = a-b;		
+			var d = (c/a)*100;
+      document.getElementById('result').innerHTML = 'You got an accuracy of' + "\r\n" + d + '%';
+			
+		}
+	</script>
+</head>
+<body><br>
+<center><h1> Score Calculator</h1>
+<hr style="height: 2px; background-color: #00f7ff; margin: 0px 20px 10px;">
+<form>
+  <label class="p">Wrongs:</label>
+  <input class="input" type="text" id="t2" name="wrongs">
+  <label class="p">Total sums:</label>
+  <input class="input" type="text" id="t1" name="sums">
+</form>
+<br>
+<button type="button" class="button" onclick="percentage()">Calculate</button>
+<p id="demo"></p>
+<br>
+<div style="width: 70%; padding: 10px 20px; margin: 8px 0px; box-sizing: border-box; border: 2px solid rgb(41, 235, 154) ; border-bottom: 4px solid rgb(41, 235, 154) ; height: 140px; background-color: rgb(197, 255, 224); font-size: 2em; font-family: sans-serrif; resize: none; "" id="result"></div>
+  
+
+
+</body>
+</html>
