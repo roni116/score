@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><title>Simple Interest</title>
+	<style>
+		body{
+			background-image: url(img.jpg);
+		}
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+		function sum()
+		{
+			var a = document.getElementById("t1").value;
+			var n = document.getElementById("t2").value;
+			var d = document.getElementById("t3").value;		
+			var s = n/2
+      document.getElementById('result').innerHTML = 'You got' + "\r\n" + s + '%';
+			
+		}
+	</script>
+</head>
+<body style="background-color: rgb(255, 255, 255); margin: 0; padding: 0;"><br>
+	<ul>
+		<li><a class="active" href="#home">Limit calculator </a></li>
+		<li><a href="#interest">Interest calculator</a></li>
+	  </ul>
+<center><h1 style="border-radius: 30px; color: azure;">Interest calculator</h1>
+<hr style="height: 2px; background-color: #17cc07; margin: 0px 20px 10px;">
+<form>
+  <label class="p">First term:</label>
+  <input class="input" type="text" id="t1" name="pamount">
+  <label class="p">Number of terms:</label>
+  <input class="input" type="text" id="t2" name="per year">
+  <label class="p">Common difference</label>
+  <input class="input" type="text" id="t3" name="period"
+</form>
+<br>
+<button type="button" class="button button1" onclick="sum()">Calculate</button>
+<p id="demo"></p>
+<br>
+<div style="width: 50%; border-radius: 40px; padding: 10px 20px; margin: 8px 0px; box-sizing: border-box; border: 3px solid rgb(179, 5, 5) ; border-bottom: 4px solid rgb(165, 6, 6) ; height: 140px; background-color: rgb(253, 246, 246); font-size: 2em; font-family: sans-serrif; resize: none; " id="result"></div>
+  
+
+
+</body>
+</html>
