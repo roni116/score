@@ -83,3 +83,71 @@ input[type=text] {
   .active {
     background-color: #04AA6D;
   }
+  .score{
+    width: 50%;
+    border-radius: 40px solid black;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-bottom: 4px solid green;
+    height: 140px;
+    background-color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    resize: none;
+  }
+
+  @media screen and (max-width: 1080px) {
+    input[type=text] {
+      width: 32%;
+      height: 300px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #262626;
+      border-radius: 10px;
+      box-shadow: 3px 4px #262626;
+      font-size: 8.5rem;
+      background-color: rgb(255, 255, 255);
+      margin-top: 1000px;
+    }
+    .button {
+      background-color: #0ba106;
+      border: 5px solid rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      height: 150px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 5.2rem;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 15px; 
+      float: center;
+      font-style: italic;
+    }
+    .p{
+      font-size: 2.8rem;
+      font-weight: 500;
+      font-style: Sans-serif;
+      color: #ffffff;
+      user-select: none;
+      }
+    .score{
+      width: 80%;
+      border-radius: 100px;
+      padding: 10px 20px;
+      margin: 8px 0px;
+      box-sizing: border-box;
+      border: 8px solid rgb(255, 1, 1);
+      border-bottom: 9px solid rgb(255, 0, 0);
+      height: 200px;
+      background-color: white;
+      font-size: 8em;
+      font-family: sans-serif;
+      resize: none;
+    }
+  }
