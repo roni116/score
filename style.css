@@ -98,7 +98,7 @@ input[type=text] {
     resize: none;
   }
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 2400px) and (min-width:1080px) {
     input[type=text] {
       width: 32%;
       height: 300px;
