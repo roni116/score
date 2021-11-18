@@ -83,7 +83,7 @@ input[type=text] {
   .active {
     background-color: #04AA6D;
   }
-  .score{
+  .scor{
     width: 50%;
     border-radius: 40px solid black;
     padding: 10px 20px;
@@ -98,7 +98,7 @@ input[type=text] {
     resize: none;
   }
 
-  @media screen and (max-width: 2400px) and (min-width:1080px) {
+  @media screen and (max-width: 2400px) and (min-width:480px) {
     input[type=text] {
       width: 32%;
       height: 300px;
@@ -109,7 +109,7 @@ input[type=text] {
       border-radius: 10px;
       box-shadow: 3px 4px #262626;
       font-size: 8.5rem;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(255, 0, 0);
       margin-top: 1000px;
     }
     .button {
